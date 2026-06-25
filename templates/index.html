@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BETO Café Caramello</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+    <nav class="navbar">
+
+    <div class="logo">
+        BETO Café Caramello
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="menu" id="menu">
+
+        <li><a href="#">Início</a></li>
+
+        <li><a href="#beneficios">Benefícios</a></li>
+
+        <li><a href="#historia">O que é?</a></li>
+
+        <li><a href="#faq">FAQ</a></li>
+
+        <li><a href="#produtos">Produtos</a></li>
+
+        <li><a href="#contato">Contato</a></li>
+
+    </ul>
+
+</nav>
+
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <h1>
+                Café Premium.<br>
+                Foco Máximo.
+            </h1>
+
+            <p>
+                Café Caramello é mais que café.
+                Energia, foco e sabor em cada xícara.
+                Ideal para estudos, trabalho, games
+                e criação de conteúdo.
+            </p>
+
+           <a class="btn"
+   href="https://cafecaramello.com.br/adalbertobatista01"
+   target="_blank"
+   rel="noopener noreferrer">
+    ☕ Comprar com Beto
+</a>
+
+
+        </div>
+
+        <div class="hero-image">
+
+            <div class="foto-flutuante">
+
+                <a
+                    href="https://linktr.ee/betocafecaramello"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="foto-link"
+                    title="Veja minhas redes e links">
+
+                    <img
+                        src="{{ url_for('static', filename='img/BetoCoffe.png') }}"
+                        alt="Beto - clique para ver o Linktree">
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>  
+
+<section class="beneficios-topo" id="beneficios">
+
+
+    <div class="beneficio-topo">
+
+        <img src="{{ url_for('static', filename='img/cafeexp.png') }}">
+
+        <h3>Sabor Incrível</h3>
+
+        <p>
+            Uma experiência única de caramelo em cada xícara.
+        </p>
+
+    </div>
+
+
+
+    <div class="beneficio-topo">
+
+        <img src="{{ url_for('static', filename='img/Linha Funcional 6.jpg') }}">
+
+        <h3>Energia Limpa</h3>
+
+        <p>
+            Cafeína natural para manter seu foco e produtividade.
+        </p>
+
+    </div>
+
+
+
+    <div class="beneficio-topo">
+
+        <img src="{{ url_for('static', filename='img/Linha Funcional 7.jpg') }}">
+
+        <h3>Foco & Performance</h3>
+
+        <p>
+            Ideal para estudos, trabalho e criação de conteúdo.
+        </p>
+
+    </div>
+
+
+
+    <div class="beneficio-topo">
+
+        <img src="{{ url_for('static', filename='img/qualidade.png') }}">
+
+        <h3>Qualidade Premium</h3>
+
+        <p>
+            Ingredientes selecionados para entregar o melhor resultado.
+        </p>
+
+    </div>
+
+
+</section>
+
+
+<!-- HISTÓRIA DO CAFÉ -->
+
+<section class="historia" id="historia">
+
+    <img
+        src="{{ url_for('static', filename='img/Oque e.png') }}"
+        alt="O que é o Café Caramello - nossa história"
+        class="historia-img">
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="faq" id="faq">
+
+    <h2>
+        Perguntas Frequentes
+    </h2>
+
+    <div class="faq-container">
+
+        <img
+            src="{{ url_for('static', filename='img/revenda.png') }}"
+            alt="Posso vender este café?"
+            class="faq-img">
+
+        <img
+            src="{{ url_for('static', filename='img/rende.png') }}"
+            alt="Rende quantas porções?"
+            class="faq-img">
+
+        <img
+            src="{{ url_for('static', filename='img/zerosugar.png') }}"
+            alt="Tem edição zero açúcar?"
+            class="faq-img">
+
+    </div>
+
+</section>
+
+
+
+<!-- PRODUTOS -->
+
+<section class="produtos" id="produtos">
+
+
+    <h2>
+        Conheça nossos cafés
+    </h2>
+
+
+
+    <div class="produtos-container">
+
+        
+
+      <div class="produto-card">
+
+
+    <img 
+    src="{{ url_for('static', filename='img/cafe2.png') }}"
+    class="produto-img"
+>
+
+            <h3>
+                Café Caramello Original
+            </h3>
+
+
+            <p>
+                Café cremoso, intenso e perfeito para o dia a dia.
+            </p>
+
+
+            <a class="btn"
+                href="https://cafecaramello.com.br/adalbertobatista01"
+                target="_blank"
+                rel="noopener noreferrer">
+                Quero comprar
+            </a>
+
+
+        </div>
+
+
+
+
+
+        <div class="produto-card">
+
+
+    <img 
+    src="{{ url_for('static', filename='img/cafewhey.png') }}"
+    class="produto-img"
+>
+
+
+            <h3>
+                Café Caramello Especial
+            </h3>
+
+
+            <p>
+                Uma experiência diferente para quem ama café.
+            </p>
+
+
+            <a class="btn"
+                href="https://cafecaramello.com.br/adalbertobatista01"
+                target="_blank"
+                rel="noopener noreferrer">
+                Quero comprar
+            </a>
+
+
+        </div>
+
+
+
+    </div>
+
+
+</section>
+
+<!-- COMO COMPRAR -->
+
+<section class="comprar" id="contato">
+
+
+    <h2>
+        Como comprar?
+    </h2>
+
+
+    <div class="passos">
+
+
+        <div class="passo">
+
+            <h3>1️⃣ Escolha seu café</h3>
+
+            <p>
+                Veja as opções disponíveis.
+            </p>
+
+        </div>
+
+
+
+        <div class="passo">
+
+            <h3>2️⃣ Chame no WhatsApp</h3>
+
+            <p>
+                Fale comigo e faça seu pedido.
+            </p>
+
+        </div>
+
+
+
+        <div class="passo">
+
+            <h3>3️⃣ Receba seu café</h3>
+
+            <p>
+                Aproveite essa experiência.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <a
+    class="btn"
+    href="https://wa.me/5513955469244?text=Olá%20Beto!%20Tenho%20interesse%20no%20Café%20Caramello."
+    target="_blank">
+
+Comprar pelo WhatsApp
+
+</a>
+
+
+
+</section>
+<!-- RODAPÉ -->
+
+<footer class="rodape">
+
+
+    <div class="rodape-conteudo">
+
+
+        <h2>
+            Café Caramello ☕
+        </h2>
+
+
+        <p>
+            Um café especial para seus melhores momentos.
+        </p>
+
+
+        <div class="links">
+
+    <a
+    href="https://www.facebook.com/profile.php?id=61585505685990 " target="_blank">
+    
+        Facebook
+
+    </a>
+
+    <a
+    href="https://www.instagram.com/cafecaramello.baixada/"target="_blank">
+
+        Instagram
+
+    </a>
+
+</div>
+
+
+        <p class="copyright">
+
+            © 2026 Café Caramello - Todos os direitos reservados
+
+        </p>
+
+
+    </div>
+
+
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('aberto');
+        menuToggle.classList.toggle('ativo');
+    });
+
+    // Fecha o menu ao clicar em um link (melhora a navegação no celular)
+    menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', () => {
+            menu.classList.remove('aberto');
+            menuToggle.classList.remove('ativo');
+        });
+    });
+</script>
+
+</body>
+
+</html>
